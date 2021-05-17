@@ -1,0 +1,37 @@
+#  https://www.kaggle.com/openfoodfacts/world-food-facts/data
+
+path = r"C:\Users\Lenovo\Desktop\dataset.tsv"
+import pandas as pd
+food = pd.read_csv(path, sep =  "\t")
+food.head()
+
+food.head(5)
+
+# What is the number of observations in the dataset?
+
+food.shape[0]
+
+# What is the number of columns in the dataset?
+
+food.shape[1]
+
+
+# Print the name of all the columns
+
+food.columns
+
+# What is the name of 105th column?
+
+food.columns[104]
+
+#  What is the type of the observations of the 105th column?
+
+food.dtypes["-glucose_100g"]
+
+# How is the dataset indexed?
+
+food.index
+
+# What is the product name of the 19th observation?
+
+food["product_name"][18]
